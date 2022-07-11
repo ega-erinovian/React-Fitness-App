@@ -6,7 +6,7 @@ import Loader from './Loader'
 
 const SimilarExercise = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
-    <Box sx={{ mt: { lg: '100px', xs: '0' }}}>
+    <Box sx={{ m: { xs: '20px' } }}>
       <Typography variant="h3" textTransform='capitalize' mb={5}>Exercises that target the same muscle group</Typography>
       <Stack direction='row' sx={{ p:'2', position:'relative' }} mb={20}>
         {targetMuscleExercises.length ? <HorizontalScrollbar data={targetMuscleExercises} /> : <Loader/>}

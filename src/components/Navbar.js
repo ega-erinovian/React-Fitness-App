@@ -6,7 +6,7 @@ import Logo from '../assets/images/Logo.png'
 
 const Navbar = () => {
   return (
-    <Stack direction="row" justifyContent="space-around" px='20px' 
+    <Stack direction="row" justifyContent="space-around" px='20px' mb={5} 
       sx={{ 
         gap: {sm: '122px', xs: '40px'}, 
         mt: { sm: '32px', xs: '20px'}, 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Stack, Button, Typography } from '@mui/material'
 
 import BodyPartImage from '../assets/icons/body-part.png';
@@ -21,6 +21,11 @@ const Detail = ({exerciseDetail}) => {
         name: equipment,
       }
     ]
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth'});
+    }, [name])
+    
   return (
     <Stack gap='60px' sx={{ flexDirection: { lg: 'row' }, p: '20px', alignItems: 'center' }}>
       <img src={gifUrl} alt={name} loading='lazy' className="detail-image"/>

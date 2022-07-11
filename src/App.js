@@ -25,3 +25,8 @@ const App = () => {
 }
 
 export default App
+
+// TODO:
+//  1. Fix scroll to top when click similar exercise on exercise detail [v]
+//  2. Add social media button on footer [v]
+//  3. Change web logo & title [v]
